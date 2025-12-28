@@ -1,0 +1,35 @@
+# Site Settings
+title: Samantha Beckert, PhD Candidate
+description: Marine Ecologist & Ecotoxicologist
+url: "https://sbbeckert.github.io"
+baseurl: ""
+
+# Author Info
+email: sbbeckert@ucdavis.edu
+github_username: sbbeckert
+author-name: Samantha Beckert
+author-image: assets/images/profile.JPEG
+
+# Build settings
+markdown: kramdown
+
+# Include pages folder
+include:
+  - _pages
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sass-converter
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
