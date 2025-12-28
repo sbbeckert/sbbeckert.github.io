@@ -1,12 +1,74 @@
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="{{site.url}}{{site.baseurl}}/" class="nav-logo">{{site.title}}</a>
-        <ul class="nav-menu">
-            <li><a href="{{site.url}}{{site.baseurl}}/">Home</a></li>
-            <li><a href="{{site.url}}{{site.baseurl}}/#about">About Sam</a></li>
-            <li><a href="{{site.url}}{{site.baseurl}}/research">Research</a></li>
-            <li><a href="{{site.url}}{{site.baseurl}}/gallery">Gallery</a></li>
-            <li><a href="{{site.url}}{{site.baseurl}}/cv">CV</a></li>
-        </ul>
-    </div>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/navbio.css">
+    <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{site.url}}{{site.baseurl}}/" class="nav-logo">{{site.title}}</a>
+            <ul class="nav-menu">
+                <li><a href="{{site.url}}{{site.baseurl}}/">Home</a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/#about">About Sam</a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/research">Research</a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/gallery">Gallery</a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/cv">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome</h1>
+            <p>Scroll down to explore more</p>
+        </div>
+    </section>
+
+    <!-- Content Section 1 -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Section 1: About This Page</h2>
+            <p>Add your content here. This section appears as you scroll.</p>
+        </div>
+    </section>
+
+    <!-- Content Section 2 -->
+    <section class="content-section alt-bg">
+        <div class="container">
+            <h2>Section 2: More Information</h2>
+            <p>More details about your work, research, or projects.</p>
+        </div>
+    </section>
+
+    <!-- Content Section 3 -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Section 3: Additional Content</h2>
+            <p>Keep adding sections as needed.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="mailto:{{site.email}}" target="_blank" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/{{site.github_username}}" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank" title="Google Scholar">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/navbio.js"></script>
+</body>
+</html>
