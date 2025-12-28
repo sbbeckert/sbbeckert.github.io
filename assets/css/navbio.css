@@ -37,20 +37,37 @@ body {
     font-weight: bold;
 }
 
+.nav-logo:hover {
+    color: #fff;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
+.nav-menu li {
+    margin: 0;
+}
+
 .nav-menu a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
+    font-weight: 500;
 }
 
 .nav-menu a:hover {
     color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
 }
 
 /* Hero Section */
