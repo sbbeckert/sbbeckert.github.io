@@ -8,55 +8,151 @@ layout: none
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samantha Beckert</title>
     <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/css/navbio.css">
+    <link rel="stylesheet" href="/assets/css/main-style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="/" class="nav-logo">Samantha Beckert</a>
             <ul class="nav-menu">
-                <li><a href="/navbio2.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About Sam</a></li>
-                <li><a href="/research">Research</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/cv">CV</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-content">
             <h1>Samantha Beckert</h1>
             <p>PhD Candidate | Marine Ecologist & Ecotoxicologist</p>
+            <a href="#about" class="hero-button">Learn More</a>
         </div>
     </section>
 
-    <section class="content-section" id="about">
+    <!-- About Section - Image Left, Text Right -->
+    <section class="content-section-split" id="about">
+        <div class="split-container">
+            <div class="split-image">
+                <img src="/assets/images/profile.JPEG" alt="Samantha Beckert">
+            </div>
+            <div class="split-text">
+                <h2>About Me</h2>
+                <p><strong>UC Davis PhD Candidate in Animal Biology</strong></p>
+                <p>Co-advised by Dr. Sean Godwin & Dr. Christina Pasparakis</p>
+                <p>Add your bio text here. Describe your research interests, background, and what drives your passion for marine ecology and ecotoxicology.</p>
+                <p>Email: <a href="mailto:sbbeckert@ucdavis.edu">sbbeckert@ucdavis.edu</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section - Text Left, Image Right -->
+    <section class="content-section-split alt-bg" id="research">
+        <div class="split-container reverse">
+            <div class="split-text">
+                <h2>Research Focus</h2>
+                <p>Describe your research area here. What questions are you trying to answer? What methodologies do you use?</p>
+                <p>Add details about your current projects, fieldwork, lab work, or any interesting findings.</p>
+                <ul class="research-list">
+                    <li>Research interest #1</li>
+                    <li>Research interest #2</li>
+                    <li>Research interest #3</li>
+                </ul>
+            </div>
+            <div class="split-image">
+                <img src="/assets/images/research-placeholder.jpg" alt="Research">
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Carousel/Slider Section -->
+    <section class="carousel-section">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="/assets/images/profile.JPEG" alt="Samantha Beckert" style="border: 4px solid black; width: 100%; max-width: 400px;">
+            <h2>Field Work & Research</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="/assets/images/slide1.jpg" alt="Slide 1">
+                        <div class="carousel-caption">
+                            <h3>Caption for Image 1</h3>
+                            <p>Description of this research moment or location</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/assets/images/slide2.jpg" alt="Slide 2">
+                        <div class="carousel-caption">
+                            <h3>Caption for Image 2</h3>
+                            <p>Description of this research moment or location</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/assets/images/slide3.jpg" alt="Slide 3">
+                        <div class="carousel-caption">
+                            <h3>Caption for Image 3</h3>
+                            <p>Description of this research moment or location</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h2>About</h2>
-                    <p><strong>UC Davis PhD Candidate in Animal Biology</strong></p>
-                    <p>Co-advised by Dr. Sean Godwin & Dr. Christina Pasparakis</p>
-                    <br>
-                    <p>More details coming soon.</p>
-                    <br>
-                    <p>Email: <a href="mailto:sbbeckert@ucdavis.edu">sbbeckert@ucdavis.edu</a></p>
+                <!-- Carousel Controls -->
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                <!-- Carousel Dots -->
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Publications/Projects Section - Grid Layout -->
     <section class="content-section alt-bg">
         <div class="container">
-            <h2>Research</h2>
-            <p>Research details coming soon.</p>
+            <h2>Recent Work</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="/assets/images/project1.jpg" alt="Project 1">
+                    <div class="card-content">
+                        <h3>Project Title 1</h3>
+                        <p>Brief description of this publication or project.</p>
+                        <a href="#" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/assets/images/project2.jpg" alt="Project 2">
+                    <div class="card-content">
+                        <h3>Project Title 2</h3>
+                        <p>Brief description of this publication or project.</p>
+                        <a href="#" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/assets/images/project3.jpg" alt="Project 3">
+                    <div class="card-content">
+                        <h3>Project Title 3</h3>
+                        <p>Brief description of this publication or project.</p>
+                        <a href="#" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Contact/Footer Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Interested in collaborating or learning more about my research?</p>
+            <a href="mailto:sbbeckert@ucdavis.edu" class="contact-button">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <a href="mailto:sbbeckert@ucdavis.edu" target="_blank" title="Email">
@@ -69,8 +165,9 @@ layout: none
                 <i class="fas fa-graduation-cap"></i>
             </a>
         </div>
+        <p class="footer-text">© 2025 Samantha Beckert</p>
     </footer>
 
-    <script src="/assets/js/navbio.js"></script>
+    <script src="/assets/js/main-script.js"></script>
 </body>
 </html>
